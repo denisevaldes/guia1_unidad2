@@ -172,7 +172,9 @@ class Ventana_principal(Gtk.Window):
         ventana_dia.run()
         ventana_dia.destroy()
 
-    # se crea ventana de dialogo, la cual solo tiene dos botones y sus respuestas
+    # se crea ventana de dialogo, la cual solo tiene dos botones
+    # un boton de aceptar en el cual vuelven a 0 los valores de la ventana principal 
+    # un boton de cancelar en donde solo se cierra la ventana de dialogo
     def resetear(self, btn= None):
         ventana_adv = Gtk.Dialog(parent=self)
         ventana_adv.set_title("advertencia")
